@@ -3,14 +3,12 @@
  对象初始化
  配置拦截器
  */
-import LuchRequest from 'luch-request'
-import config from '@/config'
+import LuchRequest from '@/lib/luch-request'
 
-const BASE_URL = config.BASE_URL
 const HttpRequest = new LuchRequest()
 
 HttpRequest.setConfig((config) => {
-  config.baseUrl = BASE_URL
+  config.baseUrl = process.env.VUE_APP_BASE_API
   config.header = {
     ...config.header
   }

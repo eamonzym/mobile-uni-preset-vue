@@ -11,7 +11,7 @@ Vue.component('cu-custom', cuCustom)
 
 // 全局挂载方法
 /** 时间组件中间件 */
-Vue.prototype.$moment = moment
+Vue.prototype.$moment = moment()
 /** 工具类中间件 */
 Vue.prototype.$utils = utils
 /** 存储中间件 */

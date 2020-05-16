@@ -73,7 +73,6 @@ module.exports = (api, options, rootOptions) => {
     api.extendPackage(pkg => {
       return {
         dependencies: {
-          'luch-request': '^2.0.1',
           'moment': '^2.25.3'
         }
       }
